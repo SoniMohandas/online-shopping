@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- Suite -->
+<suite name="Flipcart Online Shopping">
+    <listeners>
+        <listener class-name="com.revature.report.FlipcartTestReport"></listener>
+    </listeners>
+
+    <test name="Test1-Navbar Search">
+        <classes>
+            <class name="com.revature.steps.NavbarSearch"> </class>
+        </classes>
+    </test>
+
+    <test name="Test2-FlipcartTest">
+        <classes>
+            <class name="com.revature.steps.SearchProduct"> </class>
+        </classes>
+    </test>
+
+    <test name="Test3-Sign Up Negative">
+        <classes>
+            <class name="com.revature.steps.SignUpNegative"> </class>
+        </classes>
+    </test>
+
+    <test name="Test4-Links below navbar">
+        <classes>
+            <class name="com.revature.steps.LinksBelowNavbar"> </class>
+        </classes>
+    </test>
+</suite>
+
