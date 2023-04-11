@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="FlipCart_Purchase" />
+        <module name="online-shopping" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="FlipCart_Purchase" target="18" />
+    </bytecodeTargetLevel>
   </component>
 </project>
