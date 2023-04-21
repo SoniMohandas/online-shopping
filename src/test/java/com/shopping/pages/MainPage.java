@@ -69,4 +69,18 @@ public class MainPage {
     public WebElement electronics;
     @FindBy(xpath = "//div[@class = '_37M3Pb']/div[5]")
     public WebElement home;
+
+    @FindBy(xpath = "//div[@class = '_37M3Pb']/div[6]")
+    public WebElement applaince;
+    @FindBy(xpath = "//div[@class = '_37M3Pb']/div[7]")
+    public WebElement travel;
+
+    @FindBy(xpath = "//div[@class = '_37M3Pb']/div[8]")
+    public WebElement topOffers;
+
+    @FindBy(xpath = "//div[@class = '_37M3Pb']/div[9]")
+    public WebElement beauty;
+
+    @FindBy(xpath = "//div[@class = '_37M3Pb']/div[10]")
+    public WebElement twoWheelers;
 }

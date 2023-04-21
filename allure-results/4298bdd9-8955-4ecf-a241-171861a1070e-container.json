@@ -1,0 +1,1 @@
+{"uuid":"4298bdd9-8955-4ecf-a241-171861a1070e","name":"online-shopping","children":["025e9519-f508-4497-a9c4-d193cc8fc007"],"befores":[],"afters":[{"name":"testResult","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1681675765775,"stop":1681675765776}],"start":1681675755161,"stop":1681675765777}
