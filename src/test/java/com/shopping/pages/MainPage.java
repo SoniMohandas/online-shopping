@@ -83,4 +83,6 @@ public class MainPage {
 
     @FindBy(xpath = "//div[@class = '_37M3Pb']/div[10]")
     public WebElement twoWheelers;
+
+
 }

@@ -16,13 +16,10 @@ import org.testng.annotations.Test;
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
-
-
 import static org.testng.AssertJUnit.assertEquals;
 
 @Test
 public class LinksBelowNavbar extends FlipCartDriver {
-
     // Grocery photo links
     @Test(priority = 1)
     @When("User clicks grocery photo link")
@@ -34,7 +31,6 @@ public class LinksBelowNavbar extends FlipCartDriver {
     @Test(priority = 2)
     @Then("User can landed in the grocery page")
     public void user_can_landed_in_the_grocery_page() throws InterruptedException {
-
         try {
             File sourceFile = groceryPage.groceryTitle.getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(sourceFile, new File("./grocery.png"));
@@ -68,7 +64,6 @@ public class LinksBelowNavbar extends FlipCartDriver {
     @Test(priority = 5)
     @When("User clicks fashion photo link")
     public void user_clicks_fashion_photo_link() throws InterruptedException {
-
         driver.get("https://www.flipkart.com");
 //        mainPage.fashion.click();
         Actions action = new Actions(driver);
@@ -79,7 +74,6 @@ public class LinksBelowNavbar extends FlipCartDriver {
         Thread.sleep(5000);
         WebElement active = driver.findElement(By.linkText("Men's Casual Shoes"));
         action.moveToElement(active).click().build().perform();
-
     }
     @Test(priority = 6)
     @Then("User landed in the whole fashion link page")
@@ -133,7 +127,7 @@ public class LinksBelowNavbar extends FlipCartDriver {
         Thread.sleep(3000);
     }
     @Test(priority = 10)
-    @Then(" User can see whole home and furniture appliances page")
+    @Then("User can see whole home and furniture appliances page")
     public void User_can_see_whole_home_and_furniture_appliances_page(){
         WebElement cookwares = new WebDriverWait(driver, Duration.ofSeconds(30))
                 .until(ExpectedConditions
@@ -142,14 +136,14 @@ public class LinksBelowNavbar extends FlipCartDriver {
     }
 
     @Test(priority = 11)
-    @When("User clicks applaince link")
-    public void user_clicks_applaince_link(){
+    @When("User clicks appliance link")
+    public void user_clicks_appliance_link(){
         driver.get("https://www.flipkart.com");
         mainPage.applaince.click();
     }
     @Test(priority = 12)
-    @Then("User can land in the applaince page")
-    public void User_can_land_in_the_applaince_page(){
+    @Then("User can land in the appliance page")
+    public void User_can_land_in_the_appliance_page(){
         WebElement applaince = new WebDriverWait(driver, Duration.ofSeconds(30))
                 .until(ExpectedConditions.presenceOfElementLocated(By.xpath(
                         "//h1[contains(text(), 'TVs and Appliances')]"
@@ -228,5 +222,4 @@ public class LinksBelowNavbar extends FlipCartDriver {
                         .xpath("//h1[@class='_3vKRL2']")));
         assertEquals(electricVehicles.getText(), "Electric Vehicles Store");
     }
-
 }

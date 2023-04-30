@@ -23,8 +23,8 @@ Feature: Just below navbar products photo links
     Then User can see whole home and furniture appliances page
 
   Scenario: Appliance link
-    When User clicks applaince link
-    Then User can land in the applaince page
+    When User clicks appliance link
+    Then User can land in the appliance page
 
   Scenario: Travel link
     When User clicks travel link

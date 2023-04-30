@@ -23,6 +23,7 @@ public class FlipCartDriver{
     public PlaceOrderPage placeOrderPage;
     public SelectProductPage selectProductPage;
     public SignUpPage signUpPage;
+    public BelowMovingImagePage belowMovingImageLinks;
     @BeforeClass
     public void setup(){
         WebDriverManager.chromedriver().setup();
@@ -44,6 +45,7 @@ public class FlipCartDriver{
         placeOrderPage = new PlaceOrderPage(driver);
         selectProductPage = new SelectProductPage(driver);
         signUpPage = new SignUpPage(driver);
+        belowMovingImageLinks = new BelowMovingImagePage(driver);
     }
     @AfterClass
     public void teardown(){
