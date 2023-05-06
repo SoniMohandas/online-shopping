@@ -54,6 +54,8 @@ public class ViewAllElectronics extends FlipCartDriver {
         driver.get("https://www.flipkart.com");
         Thread.sleep(3000);
         List<WebElement> links = driver.findElements(By.tagName("a"));
+        for(WebElement element : links)
+            System.out.println(element.getText());
         System.out.println("No of links: "+links.size());
         belowMovingImageLinks.camera.click();
 
